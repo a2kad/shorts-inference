@@ -1,0 +1,17 @@
+services:
+  shorts-inference:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    gpus: all
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/workspace
+    environment:
+      PORT: 8000
+      TTS_MODEL_NAME: Qwen/Qwen3-TTS-12Hz-1.7B-Base
+      WHISPER_MODEL_SIZE: medium
+      TTS_LANGUAGE: French
+      VOICE_PROMPT_PATH: /workspace/voice_clone_prompt.pkl
+    restart: unless-stopped

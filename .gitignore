@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+*.pyc
+voice_clone_prompt.pkl
+server.log
