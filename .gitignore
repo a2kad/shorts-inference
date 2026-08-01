@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 voice_clone_prompt.pkl
 server.log
+*.wav

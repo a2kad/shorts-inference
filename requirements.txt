@@ -7,4 +7,4 @@ soundfile
 qwen-tts
 stable-ts
 faster-whisper
-# flash-attn can be added for CUDA builds when torch/CUDA versions match exactly.
+flash-attn # can be added for CUDA builds when torch/CUDA versions match exactly.
